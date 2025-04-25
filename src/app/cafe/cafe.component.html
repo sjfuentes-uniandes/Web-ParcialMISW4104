@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="col-6">
+        <table class="table">
+        <thead class="custom-color text-white">          
+            <th class="h4">#</th>
+            <th class="h4">Nombre</th>
+            <th class="h4">Tipo</th>
+            <th class="h4">Región</th>     
+        </thead>
+        <tbody>
+            <tr *ngFor = "let cafe of cafes">
+                <td>
+                    <dd>{{ cafe.id }}</dd>
+                </td>
+                <td>
+                    <dd>{{ cafe.nombre }}</dd>
+                </td>
+                <td>
+                    <dd>{{ cafe.tipo }}</dd>
+                </td>
+                <td>
+                    <dd>{{ cafe.region }}</dd>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
